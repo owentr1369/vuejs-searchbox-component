@@ -12,6 +12,7 @@
         name=""
         id=""
         placeholder="Search Goodle or type a URL"
+        v-model="searchValue"
       />
       <img src="../assets/icons/mic.svg.png" alt="" class="mic-icon" />
     </div>
@@ -20,6 +21,11 @@
 
 <script>
 export default {
+  data() {
+    return {
+      searchValue: "",
+    };
+  },
   methods: {
     open: function () {
       const searchBox = document.getElementById("searchBox");
@@ -31,9 +37,10 @@ export default {
 
 <style lang="scss" scoped>
 .searchbar {
-  width: 100%;
-  min-height: 100vh;
-  background-color: #f0f3ff;
+  height: 80px;
+  margin-top: 90px;
+  margin-bottom: 90px;
+  background-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;

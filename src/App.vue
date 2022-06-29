@@ -21,4 +21,11 @@ export default {
   box-sizing: border-box;
   font-family: "Varela Round", sans-serif;
 }
+#app {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 </style>
