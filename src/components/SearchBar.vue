@@ -1,6 +1,15 @@
 <template>
   <div class="searchbar">
-    <h1>Search Bar</h1>
+    <div id="searchBox">
+      <img src="../assets/icons/gglogo.svg" alt="" id="googleIcon" />
+      <input
+        type="text"
+        name=""
+        id=""
+        placeholder="Search Goodle or type a URL"
+      />
+      <img src="../assets/icons/mic.svg.png" alt="" class="mic-icon" />
+    </div>
   </div>
 </template>
 
